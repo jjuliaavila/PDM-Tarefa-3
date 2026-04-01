@@ -1,10 +1,10 @@
-import { StyleSheet, SafeAreaView } from 'react-native';
-import { SongView } from './View/SongView';
+import { NavigationContainer } from '@react-navigation/native';
+import { TabNavigator } from './navigation/TabNavigator';
 
 export default function App() {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#121212' }}>
-        <SongView />
-    </SafeAreaView>
+    <NavigationContainer>
+      <TabNavigator />
+    </NavigationContainer>
   );
 }
